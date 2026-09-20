@@ -56,9 +56,11 @@ def bff_quiz():
     print("             📜 OFFICIAL BFF CERTIFICATE 📜             ")
     print("=" * 50)
     print(f"  This certifies that:")
-    print(f"         ✨ {your_name.upper()} & {friend_name.upper()} ✨")
+    print(f"         print(f"       ✨ {your_name.upper()} & {friend_name.upper()} ✨")
+
     print("  are officially recognized as:")
-    print("          🌟 BEST FRIENDS FOREVER (BFFs) 🌟")
+    print(f"  Special Memory: '{fav_memory}'")
+
     print(f"  Special Memory: \"{fav_memory}\"")
     print("  Status: Unbreakable Bond 🤝")
     print("=" * 50)
