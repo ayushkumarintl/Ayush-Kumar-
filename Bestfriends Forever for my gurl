@@ -67,4 +67,4 @@ def bff_quiz():
     print("💖 Share this certificate with your best friend!")
 
 # Run the program
-bff_quiz()
+bff_quiz() 
