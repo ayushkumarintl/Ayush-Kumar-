@@ -1,0 +1,68 @@
+import time
+
+def bff_quiz():
+    print("=" * 45)
+    print("      💖  BEST FRIENDS FOREVER (BFF) QUIZ  💖      ")
+    print("=" * 45)
+    
+    # Step 1: Get names
+    your_name = input("Enter your name: ").strip()
+    friend_name = input("Enter your best friend's name: ").strip()
+    
+    print(f"\nWelcome, {your_name}! Let's see how strong your bond is with {friend_name}.\n")
+    time.sleep(1)
+
+    score = 0
+
+    # Question 1
+    print("1. How did you two first meet?")
+    print("   a) School / Class")
+    print("   b) In the neighborhood / Playing outside")
+    print("   c) Online / Mutual friends")
+    ans1 = input("Your answer (a/b/c): ").strip().lower()
+    if ans1 in ['a', 'b', 'c']:
+        score += 25
+
+    # Question 2
+    print("\n2. If your friend is having a bad day, what do you do?")
+    print("   a) Crack jokes until they smile")
+    print("   b) Listen patiently to everything they say")
+    print("   c) Bring snacks and hang out")
+    ans2 = input("Your answer (a/b/c): ").strip().lower()
+    if ans2 in ['a', 'b', 'c']:
+        score += 25
+
+    # Question 3
+    print("\n3. Do you share inside jokes or secrets that only you two understand?")
+    ans3 = input("   (yes/no): ").strip().lower()
+    if ans3 in ['yes', 'y']:
+        score += 25
+
+    # Question 4
+    fav_memory = input(f"\n4. What is your favorite memory together with {friend_name}?\n   > ")
+    if fav_memory:
+        score += 25
+
+    # Calculate results
+    print("\nCalculating Friendship Compatibility...")
+    time.sleep(1.5)
+    
+    print("\n" + "*" * 50)
+    print(f"🎉 FRIENDSHIP SCORE: {score}%")
+    print("*" * 50)
+
+    # Step 2: BFF Certificate
+    print("\n" + "=" * 50)
+    print("             📜 OFFICIAL BFF CERTIFICATE 📜             ")
+    print("=" * 50)
+    print(f"  This certifies that:")
+    print(f"         ✨ {your_name.upper()} & {friend_name.upper()} ✨")
+    print("  are officially recognized as:")
+    print("          🌟 BEST FRIENDS FOREVER (BFFs) 🌟")
+    print(f"  Special Memory: \"{fav_memory}\"")
+    print("  Status: Unbreakable Bond 🤝")
+    print("=" * 50)
+    print("💖 Share this certificate with your best friend!")
+
+# Run the program
+bff_quiz()
